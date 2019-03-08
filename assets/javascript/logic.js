@@ -43,7 +43,6 @@ $(document).ready(function() {
   var computer = {}; // hold onto each character's info when we select them; so that player will be in the object
   var playerPicked = false; // setting some flags; when a selected a player and the computer too
   var computerPicked = false;
-  var intervalId;
   var gameRunning = false; // game running flag; turn off the buttons; don't want the characters to keep playing
 
   // NEW/RESET FUNCTION
