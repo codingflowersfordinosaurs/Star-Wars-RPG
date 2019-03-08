@@ -1,0 +1,84 @@
+. {
+  grid-column: 1;
+  background: rgba(255,255,255,0.4);
+  margin: 10px;
+  padding: 10px;
+}
+
+.active-character {
+  grid-row: 1 / span 4;
+  display: flex;
+  background-size: cover;
+  background-position: center top;
+  min-height: 500px;
+}
+
+.active-character-stats {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  align-self: flex-end;
+  margin: 20px;
+  padding: 10px;
+  color: #ffffff;
+}
+
+.defeated {
+  animation: shake 0.82s cubic-bezier(.36, .07, .19,.97) both;
+}
+
+#character-list {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr;
+  grid-auto-flow: dense;
+}
+
+#character-grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr .5fr .5fr 1fr;
+  grid-template-rows: 1fr minmax(30px, .3fr) 1fr;
+}
+
+#player {
+  grid-column: 1/ span 2;
+}
+
+#player > .active-character-stats {
+  background: rgba(0, 255, 80, 0.3);
+}
+
+#computer {
+  grid-column: 3 / span 2;
+}
+
+#computer > .active-character-stats {
+  background: rgba(255, 0, 0, 0);
+}
+
+#attack {
+  grid-column: 2/4;
+  grid-row: 2;
+  font-size: 2.5rem;
+  line-height: 0.5;
+}
+
+/* you have a timeline from 0% to 100%; you can control what the element is doing on this timeline */
+@keyframes shake {
+  10%, 
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%,
+  80% {
+    transform: translate3d(-2px, 0, 0);
+  }
+  30%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%,
+  60% {
+    transform: translate3d(-4px, 0, 0);
+  }
+}
