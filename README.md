@@ -1,32 +1,32 @@
 # Star-Wars-RPG
 <h1>Instructions</h1>
-- This is a combat based RPG Game, the player will fight with a character of their choice against the computer. 
+<p>This is a combat based RPG Game, the player will fight with a character of their choice against the computer. <p>
 <br>
-- At the start of the game the player will choose a character by clicking on the character's picture. The player will play as that character for the rest of the game.
+<p>At the start of the game the player will choose a character by clicking on the character's picture. The player will play as that character for the rest of the game.<p>
 <br>
-- Every character that was not picked is now an enemy that the player must defeat. Enemies should be moved to a different area of the screen.
+<p>Every character that was not picked is now an enemy that the player must defeat. Enemies should be moved to a different area of the screen.<p>
 <br>
-- The player chooses which enemy they will attack by clicking on that enemy's picture.
+<p>The player chooses which enemy they will attack by clicking on that enemy's picture.<p>
 <br>
-- Once the player picks an enemy to fight, that enemy is moved to a "defender area" to do battle with the player.
+<p>Once the player picks an enemy to fight, that enemy is moved to a "defender area" to do battle with the player.<p>
 <br>
-- The player will now be able to hit the attack button to fight against that defender.
+<p>The player will now be able to hit the attack button to fight against that defender.<p>
 <br>
-- Whenever the attack button is hit, the player character is going to attack the defender character once. 
+<p>Whenever the attack button is hit, the player character is going to attack the defender character once. <p>
 <br>
-- The defender character will now counter attack the player character once.
+<p>The defender character will now counter attack the player character once.<p>
 <br>
-- When the player character "attacks", the defender will lose "Health Points" displayed at the bottom of the defender's picture.
+<p>When the player character "attacks", the defender will lose "Health Points" displayed at the bottom of the defender's picture.<p>
 <br>
-- When the defender "counter attacks", the player character will lose hp displayed at the bottom of the player character's picture.
+<p>When the defender "counter attacks", the player character will lose hp displayed at the bottom of the player character's picture.<p>
 <br>
-- Keep hitting the attack to try and defeat the defender.
+<p>Keep hitting the attack to try and defeat the defender.<p>
 <br>
-- When the defender's "Health Points" are reduced to 0 or below, they are removed from the "defender area". 
+<p>When the defender's "Health Points" are reduced to 0 or below, they are removed from the "defender area". <p>
 <br>
-- The player character can now pick a new enemy to attack.
+<p>The player character can now pick a new enemy to attack.<p>
 <br>
-- The player wins the game by defeating all enemy characters, and loses the game the game if the player character's "Health Points" are 0 or below.
+<p>The player wins the game by defeating all enemy characters, and loses the game the game if the player character's "Health Points" are 0 or below.<p>
 <br><br>
 <h1>Game design notes:</h1>
 <br>
