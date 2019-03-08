@@ -1,6 +1,6 @@
 # Star-Wars-RPG
 <h1>Instructions</h1>
-* This is a combat based RPG Game, the player will fight with a character of their choice against the computer. *
+* This is a combat based RPG Game, the player will fight with a character of their choice against the computer. 
 <br>
 At the start of the game the player will choose a character by clicking on the character's picture. The player will play as that character for the rest of the game.
 <br>
