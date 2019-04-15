@@ -1,84 +1,109 @@
+body {
+  font-family: "Share Tech Mono", Arial, Helvetica, sans-serif;
+  background-image: url("../images/star_wars_xwing.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+img {
+  width: 150px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.section-title {
+  font-size: 200%;
+}
+
+.main-section-title {
+  font-size: 300%;
+  text-align: center;
+}
+
 .character {
-  grid-column: 1;
-  background: rgba(255,255,255,0.4);
-  margin: 10px;
-  padding: 10px;
+  display: inline-block;
+  cursor: pointer;
+  background-color: white;
+  border-color: green;
+  border-style: solid;
+  border-width: 3px;
 }
 
-.active-character {
-  grid-row: 1 / span 4;
-  display: flex;
-  background-size: cover;
-  background-position: center top;
-  min-height: 500px;
+.character-image {
+  padding-right: 16px;
+  padding-left: 16px;
+  margin-top: 3px;
+  margin-bottom: 3px;
 }
 
-.active-character-stats {
-  width: 100%;
-  background: rgba(255, 255, 255, 0.5);
-  align-self: flex-end;
-  margin: 20px;
-  padding: 10px;
-  color: #ffffff;
+.character-name {
+  text-align: center;
 }
 
-.defeated {
-  animation: shake 0.82s cubic-bezier(.36, .07, .19,.97) both;
+.character-health {
+  text-align: center;
 }
 
-#character-list {
-  display: grid;
-  width: 100%;
-  grid-template-columns: 1fr;
-  grid-auto-flow: dense;
+#available-to-attack-section .character {
+  display: inline-block;
+  cursor: pointer;
+  background-color: red;
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
 }
 
-#character-grid {
-  display: grid;
-  width: 100%;
-  grid-template-columns: 1fr .5fr .5fr 1fr;
-  grid-template-rows: 1fr minmax(30px, .3fr) 1fr;
+.enemy {
+  display: inline-block;
+  cursor: pointer;
+  background-color: red;
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
 }
 
-#player {
-  grid-column: 1/ span 2;
+#action .character {
+  color: white;
+  background-color: black;
 }
 
-#player > .active-character-stats {
-  background: rgba(0, 255, 80, 0.3);
+.target-enemy {
+  color: white;
+  background-color: black;
 }
 
-#computer {
-  grid-column: 3 / span 2;
+#selected-character {
+  width: 190px;
+  height: 160px;
 }
 
-#computer > .active-character-stats {
-  background: rgba(255, 0, 0, 0);
+#attacker {
+  width: 190px;
+  height: 160px;
 }
 
-#attack {
-  grid-column: 2/4;
-  grid-row: 2;
-  font-size: 2.5rem;
-  line-height: 0.5;
+#defender {
+  width: 190px;
+  height: 160px;
 }
 
-/* you have a timeline from 0% to 100%; you can control what the element is doing on this timeline */
-@keyframes shake {
-  10%, 
-  90% {
-    transform: translate3d(-1px, 0, 0);
-  }
-  20%,
-  80% {
-    transform: translate3d(-2px, 0, 0);
-  }
-  30%,
-  70% {
-    transform: translate3d(-4px, 0, 0);
-  }
-  40%,
-  60% {
-    transform: translate3d(-4px, 0, 0);
-  }
+#defender-name {
+  text-align: center;
+}
+
+#defender-health {
+  text-align: center;
+}
+
+#choose-enemy-button {
+  visibility: hidden;
+}
+
+#restart-button {
+  visibility: hidden;
+}
+
+#turn-counter {
+  font-size: 150%;
 }
