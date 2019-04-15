@@ -1,58 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <link rel="stylesheet" href="./assets/css/reset.css">
-  <title>pew pew</title>
-</head>
-<body class="bg-dark text-white">
-  <div class="jumbotron jumbotron-fluid text-center bg-warning">
-    <h1 class="text-dark">
-      Star Wars RPG
-    </h1>
-    <button class="btn btn-lg btn-outline-dark" id="new-game">
-      Start A New Game
-    </button>
-  </div>
+<html lang="en-us">
 
-  <!-- container fluid in bootstrap allows it to grow and shrink with the width of the page -->
-  <div class="container-fluid">
-    <div class="row mb-5">
-      <div class="col-md-3">
-        <div id="character-list" class="bg-warning text-dark">
-          <!-- <div class="character">
-            <div class="character-stats"></div>
-          </div> -->
-        </div>
-      </div>
-    </div>
+	<head>
+		<meta charset="UTF-8">
+		<title>Star Wars with jQuery!</title>
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet" type="text/css">
+		<!-- CSS -->
+		<link rel="stylesheet" href="assets/css/style.css">
+		<!-- jQuery -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<!-- Game Logic -->
+		<script type="text/javascript" src="assets/javascript/rpgStarWars.js"></script>
+	</head>
 
-    <div class="col-md-8">
+	<body>
 
-      <div id="character-grid">
-        <div class="active-character bg-warning" id="player">
-          <div class="active-character-stats" id="player-stats">
+		<div class="main-section-title">Star Wars RPG!</div>
+		<div id="main-game-section">
+			<!-- Where the characters are initially available to be selected. -->
+			<div id="characters-section">
+				<div class="section-title">Select Your Character</div>
+			</div>
+			
+			<!-- Section for our selected character. -->
+			<div id="selected-character-section">
+				<div class="section-title">Your Character</div>
+				<!-- Where our selected character will appear. -->
+				<div id="selected-character"></div>
+			</div>
 
-          </div>
-        </div>
-        <div class="active-character bg-warning" id="computer">
-            <div class="active-character-stats" id="computer-stats">
+			<!-- Where our enemies available to attack will appear. -->
+			<div id="available-to-attack-section">
+				<div class="section-title">Enemies Available To Attack</div>
+			</div>
 
-            </div>
-        </div>
-        <button id="attack" class="text-warning btn btn-dark"><i class="fab fa-rebel"></i>Attack!</button>
-      </div>
+			<div class="section-title">Fight Section</div>
+			<div id="fight-section">
+				<button id="attack-button">Attack</button>
+			</div>
 
-    </div>
-  </div>
+			<div id="action">
+				<div class="character-section">
+					<div class="section-title">Defender</div>
+					<!-- Where our defender will appear. -->
+					<div id="defender"></div>
+				</div>
+			</div>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script> 
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  <script src="./assets/javascript/logic.js"></script>
-</body>
+		</div>
+		<!-- Area for game messages. -->
+		<div id="game-message"></div>
+	</body>
+
 </html>
